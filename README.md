@@ -22,3 +22,16 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+# ChatSpace DB設計
+## usersテーブル
+### Association
+
+## messagesテーブル
+### Association
+
+## groupsテーブル
+### Association
+
+## groups_usersテーブル
+### Association
