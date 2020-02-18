@@ -35,7 +35,15 @@ Things you may want to cover:
 - has_many :groups, through: photos_users
 
 ## messagesテーブル
+|Column|Type|Option|
+|------|----|------|
+|body|text||
+|image|string||
+|groups_id|integer|null: fale, foregin_key: true|
+|users_id|integer|null: fale, foregin_key: true|
 ### Association
+-belongs_to :user
+-belongs_to :group
 
 ## groupsテーブル
 ### Association
