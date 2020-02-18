@@ -25,7 +25,14 @@ Things you may want to cover:
 
 # ChatSpace DB設計
 ## usersテーブル
+|Column|Type|Option|
+|------|----|------|
+|name|string|null: false|
+|email|string|null: false|
+|password|string|null: false|
 ### Association
+- has_many :messages
+- has_many :groups, through: photos_users
 
 ## messagesテーブル
 ### Association
