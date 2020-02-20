@@ -3,16 +3,23 @@
 }
 .wrapper {
   display: flex;
+  height: 100vh;
 }
 
 .side__bar {
   background-color: #253141;
   width: 300px;
-  height: 100vh;
+  &__header {
+    height: 100px;
+    background-color: #253141;
+  }
+  &__group {
+    background-color: #2f3e51;
+    height: calc(100vh - 100px);
+  }
 }
 
-.chat__main {
+.main__chat {
   background-color: #ffffff;
   width: calc(100vw - 300px);
-  height: 100vh;
 }
