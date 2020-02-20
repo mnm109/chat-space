@@ -19,6 +19,14 @@
       height: 20px;
       width: 260px;
       margin: 0px 20px;
+      display: flex;
+      justify-content: space-between;
+      &__user {
+        line-height: 20px;
+      }
+      &__menu__box {
+        width: 60px;
+      }
     }
   }
   &__group {
