@@ -1,0 +1,19 @@
+.main__chat
+  .main__chat__header
+    .main__chat__header__left
+      .main__chat__header__left__title test
+      .main__chat__header__left__member aaa
+    .main__chat__header__edit edit
+  .main__chat__message
+    .main__chat__message__info
+      .main__chat__message__info__member masa
+      .main__chat__message__info__datetime 20200221
+    .main__chat__message__text おはよう！
+  .main__chat__form
+    .main__chat__form__box
+      .main__chat__form__box__input type a message
+      .main__chat__form__box__file
+        %label{class: "input-box__image"}
+          = icon('fas', 'image')
+          %input{type: "file"}
+    .main__chat__form__submit Send
