@@ -132,9 +132,11 @@
         width: 100%;
       }
       &__file {
-        background-color: lightgreen;
         position: absolute;
         right: 10px;
+        input {
+          display: none;
+        }
       }
     }
     &__submit {
