@@ -15,7 +15,7 @@
     display: flex;
     align-items: center;
     &__box {
-      background-color: #ffffff;
+      color: #ffffff;
       height: 20px;
       width: 260px;
       margin: 0px 20px;
@@ -26,6 +26,11 @@
       }
       &__menu__box {
         width: 60px;
+        .menu__box__btn {
+          color: #ffffff;
+          text-decoration: none;
+          padding-left: 5px;
+        }
       }
     }
   }
