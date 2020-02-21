@@ -123,15 +123,28 @@
       background-color: #ffffff;
       color: #999999;
       height: 50px;
-      padding: 0 10px;
+      width: 100%;
+      padding: 0 40px 0 10px;
       line-height: 50px;
+      display: flex;
+      position: relative;
+      &__input {
+        width: 100%;
+      }
+      &__file {
+        background-color: lightgreen;
+        position: absolute;
+        right: 10px;
+      }
     }
     &__submit {
       background-color: #38aef0;
       color: #ffffff;
       height: 50px;
+      width: 100px;
       margin-left: 15px;
       line-height: 50px;
+      text-align: center;
     }
   }
 }
