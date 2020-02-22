@@ -6,7 +6,7 @@
       .side__bar__header__box__menu__box
         =link_to "#", class: "menu__box__btn" do
           = icon('far', 'edit')
-        =link_to edit_user_path(current_user) do
+        =link_to edit_user_path(current_user), class: "menu__box__btn" do
           = icon('fas', 'cog')
   .side__bar__group
     .side__bar__group__list
