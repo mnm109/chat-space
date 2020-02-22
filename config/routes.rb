@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
   devise_for :users
   root "messages#index"
-  root to: "home#index"
+  resources :users, onlr: [:edit, :update]
 end
