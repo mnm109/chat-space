@@ -15,4 +15,13 @@ class MessagesController < ApplicationController
       render :index
     end
   end
+
+  private
+
+  def message_params
+  end
+
+  def set_group
+  end
+  
 end
