@@ -39,15 +39,16 @@
     height: calc(100vh - 100px);
     padding: 20px 20px 0 20px;
     &__list{
-      color: #ffffff;
       font-weight: bolder;
       &__title {
+        color: #ffffff;
         font-size: 15px;
         width: calc(300px - 40px);
         height: 20px;
         display: block;
       }
       &__message {
+        color: #ffffff;
         font-size: 11px;
         margin-top: 5px;
         margin-bottom: 40px;
