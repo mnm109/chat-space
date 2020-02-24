@@ -2,10 +2,11 @@
   .main__chat__header
     .main__chat__header__left
       .main__chat__header__left__title
-        -# = @group.name 
+        = @group.name
       .main__chat__header__left__member
-        -# - @group.users.each do |user| <%  %>
-            -#  = user.name <%=  %>
+        Member:
+        - @group.users.each do |user|
+          = user.name
     .main__chat__header__edit
       edit
   .main__chat__messages
