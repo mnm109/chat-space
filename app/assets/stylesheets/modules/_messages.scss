@@ -63,7 +63,6 @@
   background-color: #ffffff;
   width: calc(100vw - 300px);
   &__header {
-    background-color: #0f0404;
     height: 100px;
     border-bottom: 1px solid #eeeeee;
     display: flex;
@@ -92,10 +91,11 @@
       margin-top: 28px;
     }
   }
-  &__message {
+  &__messages {
     background-color: #fafafa;
     height: calc(100vh - 100px - 90px);
     padding: 40px;
+    overflow:auto;
     &__info {
       display: flex;
       margin-bottom: 12px;
@@ -117,30 +117,33 @@
   &__form {
     background-color: #d2d2d2;
     height: 90px;
-    display: flex;
-    align-items: center;
-    padding: 0 40px;
+    padding: 20px 40px;
     &__box {
-      background-color: #ffffff;
-      color: #999999;
       height: 50px;
       width: 100%;
-      padding: 0 40px 0 10px;
-      line-height: 50px;
-      display: flex;
-      position: relative;
-      &__input {
+      .new_message {
+        display: flex;
+        position: relative;
+      }
+      .form__box__input {
         width: 100%;
       }
       &__file {
         position: absolute;
         right: 10px;
+        top: 0px;
+        font-size: 1.3rem;
         input {
           display: none;
         }
+        .icon{
+          position: absolute;
+          right: 120px;
+          top: 15px;
+        }
       }
     }
-    &__submit {
+    .submit_btn {
       background-color: #38aef0;
       color: #ffffff;
       height: 50px;
