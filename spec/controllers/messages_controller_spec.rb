@@ -35,4 +35,22 @@ describe MessagesController do
       end
     end
   end
+
+  describe '#create' do
+    let(:params) { { group_id: group.id, user_id: user.id, message: attributes_for(:message) } }
+
+    context 'log in' do
+ 
+ 
+ 
+    end
+
+    context 'not log in' do
+
+      it 'redirects to new_user_session_path' do
+        post :create, params: params
+        expect(response).to redirect_to(new_user_session_path)
+      end
+    end
+  end
 end
