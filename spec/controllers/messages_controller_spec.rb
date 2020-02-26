@@ -52,11 +52,16 @@ describe MessagesController do
 
         it 'count up message' do
           expect{ subject }.to change(Message, :count).by(1)
+        end
+
+        it 'redirects to group_messages_path' do
+        subject
+        expect(response).to redirect_to(group_messages_path(group))
+        end
       end
 
       context 'can not save' do
       end
-    end
 
     context 'not log in' do
 
