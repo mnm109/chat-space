@@ -7,5 +7,5 @@
   .main__chat__message__text
     - if message.content.present?
       %p.main__chat__message__text__content
-        = message.content
+        .message{data: {message: {id: message.id}}}
     = image_tag message.image.url, class: 'main__chat__message__image' if message.image.present?
