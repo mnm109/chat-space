@@ -40,6 +40,9 @@
     padding: 20px 20px 0 20px;
     &__list{
       font-weight: bolder;
+      a {
+        text-decoration: none;
+      }
       &__title {
         color: #ffffff;
         font-size: 15px;
@@ -89,6 +92,10 @@
       padding: 0 20px;
       line-height: 40px;
       margin-top: 28px;
+      a {
+        color: #38aef0;
+        text-decoration: none;
+      }
     }
   }
   &__messages {
