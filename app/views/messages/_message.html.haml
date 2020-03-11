@@ -1,4 +1,4 @@
-.main__chat__message
+.main__chat__message{data: {message: {id: message.id}}}
   .main__chat__message__info
     .main__chat__message__info__member
       = message.user.name
@@ -7,5 +7,5 @@
   .main__chat__message__text
     - if message.content.present?
       %p.main__chat__message__text__content
-        = message.content
+        .message{data: {message: {id: message.id}}}
     = image_tag message.image.url, class: 'main__chat__message__image' if message.image.present?
