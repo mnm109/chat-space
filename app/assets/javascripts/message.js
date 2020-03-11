@@ -84,7 +84,11 @@ $(function(){
         data: {id: last_message_id}
       })
       .done(function(messages) {
-        console.log('succes');
+        var insertHTML = '';
+        $.each(messages, function(i, message) {
+          insertHTML += buildHTML(message)
+        });
+        $('.messages').append(insertHTML);
       })
       .fail(function() {
         alert('error');
