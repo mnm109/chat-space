@@ -13,7 +13,7 @@ $(function(){
           </div>
           <div class="main__chat__message__text">
             <p class="main__chat__message__text__content">
-              ${meaasage.content}
+              ${message.content}
             </p>
           </div>
           <img src=${message.image} >
