@@ -38,6 +38,7 @@ $(function(){
         </div>`
       return html;
     } else if ( message.image ) {
+      var html =
       `<div class="main__chat__message" data-message-id=${message.id}>
         <div class="main__chat__message__info">
           <div class="main__chat__message__info__member">
@@ -49,6 +50,7 @@ $(function(){
         </div>
         <img src=${message.image} >
       </div>`
+      return html;
     }
   }
   $('#new_message').on('submit', function(e){
@@ -64,7 +66,7 @@ $(function(){
       contentType: false
     })
       .done(function(data){
-        console.log(data)
+        
         var html = buildHTML(data);
         $('.main__chat__messages').append(html);
         $('.main__chat__messages').animate({ scrollTop: $('.main__chat__messages')[0].scrollHeight});
