@@ -103,9 +103,12 @@
     height: calc(100vh - 100px - 90px);
     padding: 40px;
     overflow:auto;
+    }
+  &__message {
     &__info {
       display: flex;
       margin-bottom: 12px;
+      
       &__member {
         color: #333333;
         font-size: 16px;
@@ -113,13 +116,14 @@
       &__datetime {
         color: #999999;
         font-size: 12px;
+        margin-left: 10px;
       }
     }
     &__text {
       color: #434A54;
       font-size: 14px;
       margin-bottom: 46px;
-    }
+  }
   }
   &__form {
     background-color: #d2d2d2;
