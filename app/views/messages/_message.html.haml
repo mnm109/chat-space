@@ -8,4 +8,5 @@
     - if message.content.present?
       %p.main__chat__message__text__content
         .message{data: {message: {id: message.id}}}
+          = message.content
     = image_tag message.image.url, class: 'main__chat__message__image' if message.image.present?
